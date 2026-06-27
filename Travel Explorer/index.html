@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Explorer</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+
+            Travel Explorer
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="paises.html">Paises</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ciudades.html">Ciudades</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="banderas.html">Banderas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="continentes.html">Continentes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <button id="modoOscuro" class="btn btn-outline-light ms-3">
+    🌙 Modo oscuro
+    </button>
+</nav>
+<header class="container text-center mt-5">
+
+    <h1> Travel Explorer</h1>
+
+<p class="lead">
+
+Descubre países, ciudades y culturas del mundo desde un solo lugar.
+
+</p>
+
+</header>
+<div class="container mt-5">
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+
+            <div class="card h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>Paises</h3>
+
+                    <p>Busca información de cualquier país.</p>
+
+                    <a href="paises.html"
+                       class="btn btn-primary">
+
+                        Entrar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>Ciudades</h3>
+
+                    <p>Consulta datos de ciudades importantes.</p>
+
+                    <a href="ciudades.html"
+                       class="btn btn-primary">
+
+                        Entrar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>Banderas</h3>
+
+                    <p>Explora las banderas del mundo.</p>
+
+                    <a href="banderas.html"
+                       class="btn btn-primary">
+
+                        Entrar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card h-100">
+
+                <div class="card-body text-center">
+
+                    <h3>Continentes</h3>
+
+                    <p>Conoce datos generales de cada continente.</p>
+
+                    <a href="continentes.html"
+                       class="btn btn-primary">
+
+                        Entrar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Clima -->
+<section class="container mt-5">
+
+    <div class="card p-4 shadow">
+
+        <h2 class="text-center mb-4">
+            Clima de tu ubicación
+        </h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h5>📍 Ciudad</h5>
+                <p id="ciudad">Cargando...</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>🌡 Temperatura</h5>
+                <p id="temperatura">-- °C</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>☁ Estado</h5>
+                <p id="estado">---</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>💨 Viento</h5>
+                <p id="viento">-- km/h</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/clima.js"></script>
+
+</body>
+</html>
